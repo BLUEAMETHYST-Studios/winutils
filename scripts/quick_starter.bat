@@ -37,7 +37,6 @@ if NOT %START%==microsoft goto default
 if NOT %START%==reddit goto default
 if NOT %START%==discord goto default
 if NOT %START%==close goto default
-
 :help
 echo Command-List:
 echo ----------------------------------------------------------------------------------------------------
