@@ -61,7 +61,7 @@ if %START%==google start https://www.google.com
 if %START%==microsoft start https://www.microsoft.com
 if %START%==reddit start https://www.reddit.com
 if %START%==discord start %localappdata%\Discord\app-1.0.9010\Discord.exe
-if %START%==close exit
+if %START%==close goto cleanup && exit
 if NOT %START%==help goto default
 if NOT %START%==cmd goto default
 if NOT %START%==restart goto default
@@ -74,3 +74,6 @@ if NOT %START%==reddit goto default
 if NOT %START%==discord goto default
 if NOT %START%==close goto default
 
+:cleanup
+cls
+color f
