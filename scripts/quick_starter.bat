@@ -41,7 +41,7 @@ echo Command-List:
 echo ---------------------------------------------------------------------------------------------------
 echo help - Opens this list
 echo cmd - This will start the Command Prompt for you
-echo restart - This will restart the quick_starter (ONLY WORKS IF IT'S NAMED "quick_starter.bat")
+echo restart - This will restart the quick_starter
 echo twitch - Opens the Twitch Website
 echo youtube - Opens the YouTube Website
 echo steam - Opens the Steam Website
@@ -53,7 +53,7 @@ echo ---------------------------------------------------------------------------
 set /P START=Input:
 if %START%==help goto help
 if %START%==cmd start cmd
-if %START%==restart start quick_starter.bat&&exit
+if %START%==restart start %~n0%~x0&&exit
 if %START%==twitch start https://www.twitch.tv
 if %START%==youtube start https://www.youtube.com
 if %START%==steam start https://www.steampowered.com
