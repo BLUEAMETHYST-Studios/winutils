@@ -1,5 +1,7 @@
 @echo off
 
+cls
+
 :welcome
 color 9
 title Blue Amethyst's Quickstarter
