@@ -38,7 +38,7 @@ if NOT %START%==close goto default
 
 :help
 echo Command-List:
-echo ---------------------------------------------------------------------------------------------------
+echo ----------------------------------------------------------------------------------------------------
 echo help - Opens this list
 echo cmd - This will start the Command Prompt for you
 echo restart - This will restart the quick_starter
@@ -49,7 +49,7 @@ echo google - Open the Google Search Engine Website
 echo microsoft - Opens the Microsoft Website
 echo reddit - Opens the Reddit Website
 echo close - Will close the Quick Starter
-echo ---------------------------------------------------------------------------------------------------
+echo ----------------------------------------------------------------------------------------------------
 set /P START=Input:
 if %START%==help goto help
 if %START%==cmd start cmd
